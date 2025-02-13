@@ -21,13 +21,34 @@ export const demos: { name: string; items: Item[] }[] = [
             },
         ],
     },
+    {
+        name: '技能',
+        items: [
+            {
+                name: 'Skills',
+                slug: 'skill',
+                description: 'Create UI that is shared across routes',
+            },
+        ],
+    },
+
+    {
+        name: '旅游',
+        items: [
+            {
+                name: '地图',
+                slug: 'map',
+                description: 'Create UI that is shared across routes',
+            },
+        ],
+    },
 ];
 
 
 export default function GlobalNav() {
     const [isOpen, setIsOpen] = useState(false);
     const close = () => setIsOpen(false);
-    return (<div className="top-14 bg-red border-r-2 h-screen">
+    return (<div className="top-14 bg-red border-r-2 h-screen bg-gray-900">
         <nav className="space-y-6 px-2 pb-24 pt-1">
             <div>
             </div>
